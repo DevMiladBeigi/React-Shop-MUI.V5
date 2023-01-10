@@ -5,6 +5,7 @@ import {
   BannerContent,
   BannerDescriptions,
   BannerImage,
+  BannerShopButton,
   BannerTitle,
 } from "../../styles/banner";
 
@@ -20,6 +21,7 @@ export default function Banner() {
         <BannerDescriptions variant="subtitle">
           In publishing and graphic design, Lorem ipsum is a placeholder text
         </BannerDescriptions>
+        <BannerShopButton color="primary"> Show Now</BannerShopButton>
       </BannerContent>
     </BannerContainer>
   );

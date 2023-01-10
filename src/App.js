@@ -6,6 +6,9 @@ import Appbar from "./components/appbar";
 import Banner from "./components/banner";
 import Promotions from "./components/promotions";
 import Products from "./components/products";
+import Footer from "./components/footer";
+import AppDrawer from "./components/drawer/index";
+import { UIProvider } from "./context/ui";
 
 function App() {
   useEffect(() => {
@@ -14,6 +17,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth="xl" sx={{ backgroundColor: "#fff" }}>
+        <UIProvider>
+
         <Appbar />
         <Banner />
         <Promotions />
@@ -21,6 +26,9 @@ function App() {
           <Typography variant="h4">Our Products</Typography>
         </Box>
         <Products />
+        <Footer/>
+        <AppDrawer/>
+        </UIProvider>
       </Container>
     </ThemeProvider>
   );
